@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplo avançado de HTML e CSS para demonstrar funcionalidades e design moderno.">
+    <title>Meu trabalho</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8bbd0, #fce4ec);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(to bottom, #ec407a, #f06292);
+            color: #fff;
+            padding: 50px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            background: #f06292;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #ff80ab;
+            transform: scale(1.1);
+        }
+
+        section {
+            margin: 30px auto;
+            padding: 40px 20px;
+            max-width: 1200px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ec407a;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .parallax {
+            background: url('momo-ayase.jpg') no-repeat center fixed;
+            background-size: cover;
+            height: 500px;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background: #f06292;
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form select, form button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background: linear-gradient(to right, #ec407a, #f06292);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        form button:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            background: #f8bbd0;
+            color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        iframe {
+            border: 5px solid #ec407a;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu trabalho</h1>
+        <p>Explorando o potencial design moderno.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#midias">Mídias</a></li>
+            <li><a href="#parallax">Parallax</a></li>
+            <li><a href="#formulario">Formulário</a></li>
+            <li><a href="#social">Redes Sociais</a></li>
+        </ul>
+    </nav>
+
+    <section id="listas">
+        <h2>Listas</h2>
+        <p>listas organizadas com estilo:</p>
+        <ol>
+            <li>Introdução ao HTML</li>
+            <li>Estilizando com CSS</li>
+            <li>Interatividade com JavaScript</li>
+        </ol>
+        <ul>
+            <li>Design Responsivo</li>
+            <li>Melhores Práticas de SEO</li>
+            <li>Sites Dinâmicos</li>
+        </ul>
+    </section>
+
+    <section id="tabelas">
+        <h2>Tabelas</h2>
+        <p>Organize informações de forma clara e atraente:</p>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>23</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>30</td>
+                <td>Desenvolvedor</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="midias">
+        <h2>Mídias</h2>
+        <p>vídeos e áudios:</p>
+        <audio controls>
+            <source src="ssstik.io_1733275823896.mp3" type="audio/mpeg">
+        </audio>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a4na2opArGY?si=LcOo-LnerGwPGG8l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="parallax" class="parallax"></section>
+
+    <section id="formulario">
+        <h2>Formulário</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem">
+            <button>Enviar</button>
+        </form>
+    </section>
+
+    <section id="social">
+        <h2>Redes Sociais</h2>
+        <h1>Veja o perfil diretamente incorporado no site</h1>
+        <iframe src="https://www.instagram.com/ttig9799/" width="99%" height="400"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Criado por Neyalne</p>
+    </footer>
+</body>
+
+</html>
